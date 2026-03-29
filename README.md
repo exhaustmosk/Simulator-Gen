@@ -28,10 +28,12 @@ graph TD
         G
     end
 ```
+<img width="1884" height="915" alt="Screenshot 2026-03-30 003248" src="https://github.com/user-attachments/assets/e1afca21-9128-44f7-bd76-94628a394e15" />
 
 ### 1. Data Ingestion (Stock & News)
 - **Source**: Integrated with `yfinance` for global equity data and institutional news feeds.
 - **Prototype Mode**: Currently uses a high-fidelity **Deterministic Random Walk** generator to ensure 100% demo stability and sub-millisecond response times.
+<img width="1860" height="905" alt="Screenshot 2026-03-30 003309" src="https://github.com/user-attachments/assets/a51b76bb-b43d-4c29-b976-be4b70383610" />
 
 ### 2. Quantitative Engine (The Math)
 Using the real-world `ta` (Technical Analysis) library in Python, the system calculates multi-timeframe indicators:
@@ -47,10 +49,9 @@ Using the real-world `ta` (Technical Analysis) library in Python, the system cal
 Instead of overwhelming the user with raw numbers, all quantitative data is piped into **Groq's Llama 3-70B** model.
 - **Natural Language Reasoning**: The AI generates an executive summary, specific risk factors, and a clear "BUY/SELL/HOLD" action.
 - **Circuit Breaker**: Includes a safety layer that falls back to a rules-based inference engine if the API is restricted or network-unstable.
+<img width="1888" height="912" alt="Screenshot 2026-03-30 003602" src="https://github.com/user-attachments/assets/ae99a157-f8fa-4c2b-bc06-6f20fa8fb205" />
 
-### 5. Frontend & UI (Wispr Flow)
-- **Premium Design**: Built with React, Vite, and Framer Motion for a glassmorphic "Wispr Flow" aesthetic.
-- **Bento Core**: Uses an asymmetrical, randomized grid layout to keep the data visualization organic and engaging.
+<img width="1863" height="915" alt="Screenshot 2026-03-30 003324" src="https://github.com/user-attachments/assets/81775d39-373a-4849-84ec-0b2a8bb768d9" />
 
 ---
 
